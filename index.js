@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 const courseSchema = Joi.object({
-    nome: Joi.string().allow(null, ''),
+    name: Joi.string().allow(null, ''),
     email: Joi.string().required().email(),
     course_id: Joi.string().required()
 })
